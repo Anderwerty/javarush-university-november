@@ -9,12 +9,31 @@ public class Example8 {
         arr[2] = 5;
 
         int[] arr2 = new int[]{1, 2, 3,};
-        System.out.println(arr2.length);;;;;;;;;;;;;;;;
+        System.out.println(arr2.length);
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
 
         int[] arr3 = {1, 2, 3,};
         String hello = "hello all";
         String arrStrings[] = {"Hello", "Hi", hello};
 
-        int dd =1_000_000;
+        int dd = 1_000_000;
+
+        for (String temp : arrStrings) {
+            System.out.println(temp);
+        }
     }
 }
