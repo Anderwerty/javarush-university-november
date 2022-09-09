@@ -1,3 +1,9 @@
+# intellij idea
 .idea
 *.iml
+#Maven
 target
+#Not maven project
+out
+#mac
+.DS_Store
