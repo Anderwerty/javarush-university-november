@@ -18,23 +18,23 @@ public class AnagramRunner {
 
     public void run() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("please input path to file");
+        printMessage("please input path to file");
         String filepath = scanner.nextLine();
         boolean isWorking = true;
 
         while (isWorking) {
-            System.out.println("Input your choose 1- ... 2- ... 3- ... 4- ...");
+            printMessage("Input your choose 1- ... 2- ... 3- ... 4- ...");
             int choose = scanner.nextInt();
             if (choose == 1) {
-                System.out.println("mode: console file");
+                printMessage("mode: console file");
                 String mode = scanner.nextLine();
                 if ("console".equals(mode)) {
-                    System.out.println(" ");
+                    printMessage(" ");
                     String text = scanner.nextLine();
-                    System.out.println("delta ?");
+                    printMessage("delta ?");
                     int delta = scanner.nextInt();
                     String result = anagramMaker.encode(text, delta);
-                    System.out.println(result);
+                    printMessage(result);
                 } else {
                     String path = scanner.nextLine();
                     File file = new File(path);
@@ -45,18 +45,23 @@ public class AnagramRunner {
                 }
 
             } else if (choose == 2) {
-                System.out.println(" ");
+                printMessage(" ");
                 String text = scanner.nextLine();
                 String result = anagramMaker.decode(text, 100);
-                System.out.println(text);
+                printMessage(text);
             } else if (choose == 3) {
                 //...
             } else if (choose == 4) {
                 isWorking = false;
             } else {
-                System.out.println("");
+                printMessage("");
             }
         }
+    }
+
+    @SuppressWarnings("squid:S106")
+    private void printMessage(String message){
+        System.out.println(message);
     }
 
 }

@@ -22,12 +22,16 @@ public class AnagramMaker {
     //10000000000
     //
     public String decode(String text, int delta) {
-        //....
-        return null;
+        return changeSymbols(text, -delta);
     }
 
     public String encode(String text, int delta) {
-        //....
+        return changeSymbols(text, delta);
+    }
+
+
+    private String changeSymbols(String text, int delta){
+        // implementation
         return null;
     }
 }
