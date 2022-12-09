@@ -7,7 +7,7 @@ public abstract class Animal {
         this.baseSettings = baseSettings;
     }
 
-    public abstract void eat(); // 1) do we need parameter?
+    public abstract void eat(Location location); // 1) do we need parameter?
 
     public abstract void increase();  // 1)???
 
