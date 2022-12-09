@@ -1,0 +1,5 @@
+project name = ua.com.javarush.november.surname.island
+
+root package name = ua.com.surname.island
+
+maven project optional
