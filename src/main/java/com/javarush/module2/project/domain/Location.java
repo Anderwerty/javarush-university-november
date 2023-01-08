@@ -19,7 +19,6 @@ public class Location {
 
     public void addAnimal(Animal animal) {
         // check ?
-
     }
 
     public boolean canAnimalBeAdded(Animal animal) {
